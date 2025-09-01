@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@/*":[
+                "./*"    //在@后产生提示路径
+            ]
+        }
+    },
+    "exclude": ["node_modules"]
+}
