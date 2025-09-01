@@ -1,4 +1,5 @@
-const {host} = require("@/config/default").datebase
+/*这是MongoDB的表配置*/ 
+const { host } = require("@/config/default").datebase
 const mongoose = require("mongoose")
 mongoose.pluralize(null)  //使mongodb不在表名后加s
 const { Schema, model } = mongoose

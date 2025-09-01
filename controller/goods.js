@@ -14,7 +14,7 @@ const openai = new OpenAI(
 class GoodsController{
     //导入商品
     async addGoods(ctx) {
-        const goodsList = fs.readFileSync("D:\\COMP DATA\\Desktop\\毕业设计\\毕业设计\\毕设代码初版\\AIGC-Node\\goods.json", "utf-8")
+        const goodsList = fs.readFileSync("../goods.json", "utf-8")
         const jsonGoods = JSON.parse(goodsList)
         await modelGoods.insertMany(jsonGoods)
     }

@@ -1,4 +1,4 @@
-const { Schema, model} = require("@/config/dataBase")
+const { Schema, model } = require("@/config/dataBase")
 var dayjs = require('dayjs')
 //定义商品字段
 const complaintSchema = new Schema({

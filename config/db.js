@@ -1,3 +1,4 @@
+/*这是Mysql的表配置*/ 
 const { Sequelize } = require('sequelize');
 const {datebase,userName,password,host} = require('./default').db
 const db = new Sequelize(datebase,userName , password, {
