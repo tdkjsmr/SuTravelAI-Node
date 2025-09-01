@@ -1,3 +1,4 @@
+//校验中间件
 class Validate{
     //校验undefined
     async undefinedCheck(val,par){
