@@ -43,7 +43,6 @@ class GoodsController{
                 }]
         });
         const keyWords = completion.choices[0].message.content
-        console.log(keyWords)
         if (keyWords != "null") {
             //构建模糊查询商品
             const queryConditions = JSON.parse(keyWords).map(item => ({

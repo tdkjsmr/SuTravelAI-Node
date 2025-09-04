@@ -36,12 +36,10 @@ class ChatController{
         let requirePar = "";    //函数参数
         //迭代
         for await (const chunk of completion) {
-            //console.log(JSON.stringify(chunk));
             const str = JSON.stringify(chunk)
             const obj = JSON.parse(str)
             
             const choices = obj.choices[0].delta;
-            console.log(choices.tool_calls)
             //判断是否可以调用函数工具
             if (choices.content === null && choices.tool_calls !== null) {
                 

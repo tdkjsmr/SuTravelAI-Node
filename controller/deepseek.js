@@ -29,7 +29,6 @@ class DeepseekController{
         //迭代
         for await (const chunk of completion) { 
             const delta = chunk.choices[0].delta;
-            console.log(delta)
              // 处理思考过程
             if (delta.reasoning_content) {
                 const resObj = JSON.stringify({ type: "content", functionName:"", data: delta.reasoning_content ,modelType:"deepseek-R1",replyType:"reasoning"})
